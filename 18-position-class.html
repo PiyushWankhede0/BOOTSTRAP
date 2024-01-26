@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+.container{
+    border: 2px solid rgb(218, 45, 45);
+    background-color: antiquewhite;
+    height: 500px;
+    width: 500px;
+
+}
+
+.box{
+    /* padding: 15px; */
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    
+}
+h3{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <h3>arrange elements</h3>
+    <div class="container position-relative">
+        <div class="box position-absolute top-0 start-0">1</div>
+        <div class="box position-absolute top-0 end-0">2</div>
+        <div class="box position-absolute bottom-0 start-0">3</div>
+        <div class="box position-absolute bottom-0 end-0">4</div>
+        <div class="box position-absolute top-50 start-50">5</div>
+        <div class="box position-absolute bottom-50 start-50">6</div>
+
+    </div>
+<br><br><br>
+
+<h3>position in middel of elements</h3><br>
+    <div class="container position-relative">
+        <div class="box position-absolute top-0 start-0 translate-middle">1</div>
+        <div class="box position-absolute top-0 start-100 translate-middle">2</div>
+        <div class="box position-absolute top-100 start-0 translate-middle">3</div>
+        <div class="box position-absolute top-100 start-100 translate-middle">4</div>
+        <div class="box position-absolute top-50 start-0 translate-middle">5</div>
+        <div class="box position-absolute top-0 start-50 translate-middle">6</div>
+
+    </div>
+<br><br>
+<h3>middel from x and y axis </h3>
+<br>
+
+    <div class="container position-relative">
+        <div class="box position-absolute top-0 start-0">1</div>
+        <div class="box position-absolute top-0 start-50 translate-middle-x">2</div>
+        <div class="box position-absolute top-0 end-0">3</div>
+        <div class="box position-absolute top-50 start-0 translate-middle-y">4</div>
+        <div class="box position-absolute top-50 start-50 translate-middle">5</div>
+        <div class="box position-absolute top-50 end-0 translate-middle-y">6</div>
+        <div class="box position-absolute bottom-0 start-0">7</div>
+        <div class="box position-absolute bottom-0 start-50 translate-middle-x">8</div>
+        <div class="box position-absolute bottom-0 end-0">9</div>
+      </div>
+</body>
+</html>
